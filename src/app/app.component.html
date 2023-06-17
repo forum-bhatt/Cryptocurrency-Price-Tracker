@@ -1,0 +1,16 @@
+  <mat-toolbar>
+
+    <!-- Header -->
+    <span>Crypto Checker</span>
+    <span class="example-spacer"></span>
+
+    <!-- Header Buttons -->
+    <mat-form-field >
+      <!-- Two way binding using ngModel -->
+      <mat-select (valueChange)="sendCurrency($event)" class="text-sm" [(ngModel)]="selectedCurrency"> 
+        <mat-option value="INR">INR</mat-option>
+        <mat-option selected value = "USD">USD</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar>
+<router-outlet></router-outlet>
