@@ -12,7 +12,7 @@
                     <ng-container *ngFor="let row of bannerData">
                         <div class="col-1">
                             <div class="card">
-                                <img [src]="row.image" width="100" class="img-fluid" alt="Bannerdata">
+                                <img [src]="row.image" width="400" class="img-fluid" alt="Bannerdata">
                                 <div class="card-body">
                                     <h5 class="card-title">{{row.symbol | uppercase}} <span class="text-danger">{{row.market_cap_change_percentage_24h}}%</span></h5>
                                 </div>
